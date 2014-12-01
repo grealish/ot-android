@@ -18,6 +18,16 @@ You can verify the version using:
 
 Download and configure the protobuf package:
 
+NOTE: Before you can run getProtobufLibrary.sh make sure the correct BUILD_PLATFORM is set
+and that the paths for the NDK and SDK are correct. 
+```
+# on mac osx use 'darwin-x86_64'
+# on linux x64 use 'linux-x86_64'
+export BUILD_PLATFORM=YOUR_BUILD_PLATFORM
+export NDK=PATH_TO_THE_NDK
+export ANDR_SDK=PATH_TO_THE_SDK
+```
+
     $ getProtobufLibrary.sh
 
 NOTE: If you want to tweak the specifics of the Android platform and version,
