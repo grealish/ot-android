@@ -30,9 +30,12 @@ export CROSS_COMPILE=i686-linux-android
 export TOOLCHAIN_CPU=x86
 export TOOLCHAIN_VERSION=4.8
 export TARGET_PLATFORM_VER=9
-export BUILD_PLATFORM=darwin-x86_64
-export NDK=/Users/au/ndk
-export ANDR_SDK=/Users/au/android-sdk-macosx
+
+# on mac osx use 'darwin-x86_64'
+# on linux x64 use 'linux-x86_64'
+export BUILD_PLATFORM=YOUR_BUILD_PLATFORM
+export NDK=PATH_TO_THE_NDK
+export ANDR_SDK=PATH_TO_THE_SDK
 export PREBUILT=$NDK/toolchains/$TOOLCHAIN_CPU-$TOOLCHAIN_VERSION
 export PLATFORM=$NDK/platforms/android-$TARGET_PLATFORM_VER/arch-$TOOLCHAIN_CPU/
 export CC="$NDK/toolchains/$TOOLCHAIN_CPU-$TOOLCHAIN_VERSION/prebuilt/$BUILD_PLATFORM/bin/$CROSS_COMPILE-gcc"
